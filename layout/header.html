@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV JAYA RATU</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="font-sans text-gray-800"></body>
+
+<header class="fixed w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+        <!-- Logo -->
+        <h1 class="text-3xl md:text-5xl font-bold text-yellow-600">
+            <a href="index.php">JR</a>
+        </h1>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6 font-medium">
+            <a href="#about" class="hover:text-yellow-600">Tentang</a>
+            <a href="#services" class="hover:text-yellow-600">Layanan</a>
+            <a href="#advantages" class="hover:text-yellow-600">Keunggulan</a>
+            <a href="#gallery" class="hover:text-yellow-600">Galeri</a>
+            <a href="#faq" class="hover:text-yellow-600">FAQ</a>
+            <a href="#reviews" class="hover:text-yellow-600">Ulasan</a>
+            <a href="#contact" class="hover:text-yellow-600">Kontak</a>
+        </nav>
+
+        <!-- Burger Button (Mobile) -->
+        <button id="burger" class="md:hidden flex flex-col space-y-1 focus:outline-none">
+            <span class="block w-6 h-0.5 bg-gray-800" ></span>
+            <span class="block w-6 h-0.5 bg-gray-800"></span>
+            <span class="block w-6 h-0.5 bg-gray-800"></span>
+        </button>
+    </div>
+</header>
+
+<!-- Overlay (background hitam transparan) -->
+<div id="overlay" class="fixed inset-0  hidden"></div>
+
+<!-- Sidebar Menu -->
+<sidebar id="sidebar"
+    class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
+    <div class="p-6 flex flex-col space-y-6 font-medium">
+        <button id="closeSidebar" class="self-end text-gray-700 text-2xl hover:text-yellow-600">&times;</button>
+        <a href="#about" class="hover:text-yellow-600">Tentang</a>
+        <a href="#services" class="hover:text-yellow-600">Layanan</a>
+        <a href="#advantages" class="hover:text-yellow-600">Keunggulan</a>
+        <a href="#gallery" class="hover:text-yellow-600">Galeri</a>
+        <a href="#faq" class="hover:text-yellow-600">FAQ</a>
+        <a href="#reviews" class="hover:text-yellow-600">Ulasan</a>
+        <a href="#contact" class="hover:text-yellow-600">Kontak</a>
+    </div>
+</sidebar>
